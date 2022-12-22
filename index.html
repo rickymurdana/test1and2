@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar | Coding Salman</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="row">
+            <div class="col">
+                <div class="first box">
+                    <input id="font-size" type="number" value="16" min="1" max="100" onchange="changeFontSize(this)">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="bold(this)">
+                        <i class="fa-solid fa-bold"></i>
+                        <span class="tooltiptext">bold</span>
+                    </button>
+                    <button type="button" onclick="italic(this)">
+                        <i class="fa-solid fa-italic"></i>
+                        <span class="tooltiptext">italic</span>
+                    </button>
+                    <button type="button" onclick="underline(this)">
+                        <i class="fa-solid fa-underline"></i>
+                        <span class="tooltiptext">underline</span>
+                    </button>
+                    <button type="button" onclick="cut(this)">
+                        <i class="fa-solid fa-scissors"></i>
+                        <span class="tooltiptext">cut</span>
+                    </button>
+                    <button type="button" onclick="copy(this)">
+                        <i class="fa-solid fa-copy"></i>
+                        <span class="tooltiptext">copy</span>
+                    </button>
+                    <button type="button" onclick="paste(this)">
+                        <i class="fa-solid fa-paste"></i>
+                        <span class="tooltiptext">paste</span>
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" onclick="alignLeft(this)">
+                        <i class="fa-solid fa-align-left"></i>
+                        <span class="tooltiptext">align left</span>
+                    </button>
+                    <button type="button" onclick="alignCenter(this)">
+                        <i class="fa-solid fa-align-center"></i>
+                        <span class="tooltiptext">align center</span>
+                    </button>
+                    <button type="button" onclick="alignRight(this)">
+                        <i class="fa-solid fa-align-right"></i>
+                        <span class="tooltiptext">align right</span>
+                    </button>
+                    <button type="button" onclick="orderedList(this)">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="tooltiptext">ordered list</span>
+                    </button>
+                    <button type="button" onclick="unorderedList(this)">
+                        <i class="fa-solid fa-list-ol"></i>
+                        <span class="tooltiptext">unordered list</span>
+                    </button>
+                </div>
+                <div class="fourth box">
+                    <button type="button" onclick="changeCase(this)">
+                        aA
+                        <span class="tooltiptext">change case</span>
+                    </button>
+                    <button type="button" onclick="reset()">
+                        <i class="fa-solid fa-text-slash"></i>
+                        <span class="tooltiptext">reset default</span>
+                    </button>
+                    <input type="color" onchange="changeColor(this)">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <textarea id="textarea1" placeholder="Your text here "></textarea>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
