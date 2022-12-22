@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CRUD</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+
+    <body>
+        <section>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+                <div id="form">
+                    <div class="container">
+                        <div class="form-input">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="form-input">
+                            <label for="gender">Gender</label>
+                            <div class="select">
+                                <div class="option">
+                                    <input type="radio" id="gender" name="gender" value="male">
+                                    <p>Male</p>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="gender" name="gender" value="female">
+                                    <p>Female</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <label for="address">Address</label>
+                            <textarea type="text" name="address" id="address" rows="4"></textarea>
+                        </div>
+                        <div class="form-input">
+                            <label for="qualification">Qualification</label>
+                            <select id="qualification">
+                                <option id="post" name="post" value="post">Post Graduate</option>
+                                <option id="under" name="under" value="under">Under Graduate</option>
+                            </select>
+                        </div>
+                        <div class="form-input">
+                            <label for="profile">Profile Image</label>
+                            <input type="file" id="myfile" name="myfile">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="form-input">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div class="form-input">
+                            <label for="dob">DOB</label>
+                            <input type="date" name="dob" id="dob">
+                        </div>
+                        <div class="form-input">
+                            <label for="lang">Language Known</label>
+                            <div class="select">
+                                <div class="option">
+                                    <input type="checkbox" name="en" id="lang" value="en">
+                                    <p>English</p>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" name="hindi" id="lang" value="hindi">
+                                    <p>Hindi</p>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" name="tamil" id="lang" value="tamil">
+                                    <p>Tamil</p>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" name="hindi" id="lang" value="others">
+                                    <p>Others</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <label for="specialization">Specialization</label>
+                            <input type="text" name="specialization" id="specialization">
+                        </div>
+                        <div class="form-input">
+                            <label for="contact">Contact</label>
+                            <input type="number" name="contact" id="contact">
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="reset" value="Cancel">
+                    <input type="submit" value="Save">
+                </div>
+            </form>
+        </section>
+        <section>
+            <div>
+                <label for="search">Search</label>
+                <input type="text" id="search" name="search">
+            </div>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col"><div class="sort-by">Name</div></th>
+                        <th scope="col"><div class="sort-by">Age</div></th>
+                        <th scope="col"><div class="sort-by">DOB</div></th>
+                        <th scope="col"><div class="sort-by">Gender</div></th>
+                        <th scope="col"><div class="sort-by">Address</div></th>
+                        <th scope="col"><div class="sort-by">Language</div></th>
+                        <th scope="col"><div class="sort-by">Qualification</div></th>
+                        <th scope="col"><div class="sort-by">Specialization</div></th>
+                        <th scope="col"><div class="sort-by">Contact</div></th>
+                        <th scope="col"><div class="sort-by">Image</div></th>
+                        <th scope="col"><div class="sort-by">Action</div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>DOB</td>
+                        <td>Gender</td>
+                        <td>Language</td>
+                        <td>Qualification</td>
+                        <td>Specialization</td>
+                        <td>Contact</td>
+                        <td>Image</td>
+                        <td>Action</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </body>
+    <script type="text/javascript" src="./main.js"></script>
+</html>
